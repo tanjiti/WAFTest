@@ -9,6 +9,7 @@ use LWP::UserAgent;
 use HTTP::Headers;
 use HTTP::Cookies;
 use HTTP::Request::Common;
+use MIME::Base64 qw(encode_base64);
 use Getopt::Long;
 use Term::ANSIColor qw(:constants);
 local $Term::ANSIColor::AUTORESET = 1;
@@ -32,7 +33,7 @@ my $UserAgent = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101
 my $proxy = q{};
 my $referer = q{};
 my $timeout = 180;
-
+my $redirect = 7;
 
 
 my $silent = q{};
@@ -47,16 +48,20 @@ my $fileContent = q{};
 my $fileType = q{};
 
 
+my $basicAuth = q{};
+my $username = q{};
+my $password = q{};
+
 GetOptions(
 	"help"=>\$help,
-	'u|url=s'=>\$url,
-	'm|method=s'=>\$method,
+	'url=s'=>\$url,
+	'm|method=s'=>\$method, 
 	'H|header=s%'=>\%headers,
-	'b|cookie=s%'=>\%cookies,
+	'cookie=s%'=>\%cookies,
 	'd|data=s%'=>\%datas, #HTTP POST data: raw or urlencoded
 	'A|user-agent=s'=>\$UserAgent,
 	'e|referer=s'=>\$referer,
-	'p|proxy=s'=>\$proxy,
+	'proxy=s'=>\$proxy,
     't|timeout=i'=>\$timeout,
 	'F|fileUpload'=>\$fileUpload,
     'fileFiled=s'=>\$fileFiled, 
@@ -66,7 +71,10 @@ GetOptions(
     'fileType=s'=>\$fileType,
 	's|silent'=>\$silent,
 	'r|raw'=>\$raw,
-
+    'L|redirect=i'=>\$redirect,
+    'basicAuth'=>\$basicAuth,
+    'username=s'=>\$username,
+    'password=s'=>\$password,
 );
 
 
@@ -87,31 +95,32 @@ die "You need to specify the url for set HTTP request \n Please run --help for m
 
 
 
-my $status_line =getResponse($url,\%cookies,$proxy,$timeout,$UserAgent,$referer,\%headers,$method,\%datas,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw);
+my $status_line =getResponse($url,\%cookies,$proxy,$timeout,$redirect,$UserAgent,$referer,\%headers,$method,\%datas,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw,$basicAuth,$username,$password);
 say BOLD YELLOW $status_line;
 
 
 sub getHelp{
    print <<__HELP__;
 
-Usage: $0 -url 'http://xxxx.xx.com'
+Usage: perl  $0 -url 'http://xxxx.xx.com'
 
 
 where:
--h|help 
--u|url 'http://xxxx.xx.com' 
--m|method GET|POST|HEAD
+-help 
+-url 'http://xxxx.xx.com' 
+-m|method GET|POST|HEAD default value is GET
 
 -H|header X-Forwarded-For='127.0.0.1, 127.0.0.2' -H VIA='Squid'
--b|cookie usertrack='123456' -b hit=1
+-cookie usertrack='123456' -b hit=1
 -d|data name='tanjiti' -d passwd=12345
 
 
--A|user-agent 'baiduspider'
+-A|user-agent 'baiduspider' default value is Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0
 -e|referer 'http://www.baidu.com'
 
--p|proxy   'http:////64.34.14.28:7808'
--t|timeout 120 
+-proxy   'http://64.34.14.28:7808'
+-t|timeout 120  default value is 120
+-L|redirect 7  default value is 7
 
 File Upload Options As Follows
 -F|fileUpload  : Specify this is a http file upload request
@@ -124,6 +133,9 @@ File Upload Options As Follows
 -s|silent : Only return response status line
 -r|raw : POST Raw Data
 
+-basicAuth : basic Authentication
+-username tanjiti
+-password 12345
 __HELP__
 
 }
@@ -155,10 +167,11 @@ sub getHostFromURL{
 
 sub setBrowser{
 
-	my ($proxy,$cookie,$timeout,$silent) = @_;
+	my ($proxy,$cookie,$timeout,$redirect,$silent) = @_;
 	my $browser = LWP::UserAgent->new();
 	$browser->timeout($timeout);
 	$browser->ssl_opts(verify_hostname => 1);
+    $browser->max_redirect($redirect);
 	$browser ->show_progress(1) if not $silent;
 	$browser->proxy([qw/http https/]=>$proxy) if $proxy;
     $browser->cookie_jar($cookie);
@@ -172,7 +185,7 @@ sub setBrowser{
 
 sub setHeader{
 	
-	my ( $UserAgent,$host,$referer,$headers_ref) = @_;
+	my ( $UserAgent,$host,$referer,$headers_ref,$basicAuth,$username,$password) = @_;
 
 	my $header = HTTP::Headers->new();
 
@@ -190,6 +203,10 @@ sub setHeader{
 
 	$header->header('Referer'=>$referer) if $referer;
 	
+    if($basicAuth){
+        my $authenBase64 = encode_base64("$username:$password");
+        $header->header('Authorization' => "Basic $authenBase64");
+    }
 	
 	
 
@@ -229,7 +246,7 @@ sub setCookie{
 }
 
 sub setRequest{
-	my ($method,$url,$headers_ref,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$raw) = @_;
+	my ($method,$url,$header,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$raw) = @_;
 
 	my $request = HTTP::Request->new();
     
@@ -237,7 +254,8 @@ sub setRequest{
     $method = uc $method;
     
     #HTTP Request Headers
-    my %headers = %$headers_ref;
+    my %headers = %$header;
+
 
     #HTTP Form Data
     my %datas = %$datas_ref;
@@ -335,7 +353,7 @@ sub setRequest{
     
 sub getResponse{
     
-    my ($url,$cookies_ref,$proxy,$timeout,$UserAgent,$referer,$headers_ref,$method,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw) = @_;
+    my ($url,$cookies_ref,$proxy,$timeout,$redirect,$UserAgent,$referer,$headers_ref,$method,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw,$basicAuth,$username,$password) = @_;
     
     my %headers = %$headers_ref;
 
@@ -345,18 +363,21 @@ sub getResponse{
 
     my $cookie_jar = setCookie($host,$cookies_ref);
 
-    my $browser = setBrowser($proxy,$cookie_jar,$timeout,$silent);
+    my $browser = setBrowser($proxy,$cookie_jar,$timeout,$redirect,$silent);
 
-    my $header = setHeader($UserAgent,$host,$referer,$headers_ref);
+    my $header = setHeader($UserAgent,$host,$referer,$headers_ref,$basicAuth,$username,$password);
 
     my $request = setRequest($method,$url,$header,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$raw);
     
     my $response = $browser->request($request);
+
+
     
     say BOLD RED $response->request->as_string if not $silent;
     say BOLD BLUE $response->headers_as_string if not $silent;
-    say BOLD GREEN $response->decoded_content if not $silent;
+    say BOLD GREEN $response->decoded_content if not $silent and $method ne 'HEAD';
    
+    
    return $response->status_line;
    
    
