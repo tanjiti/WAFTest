@@ -1,0 +1,12 @@
+LWP::Protocol::https
+LWP::Protocol::socks
+HTTP::Request::Common
+LWP::UserAgent
+HTTP::Headers
+HTTP::Cookies
+URI
+URI::Split
+URI::Escape
+Getopt::Long
+Term::ANSIColor
+MIME::Base64
