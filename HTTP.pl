@@ -52,6 +52,8 @@ my $basicAuth = q{};
 my $username = q{};
 my $password = q{};
 
+my $request_body = q{};
+
 GetOptions(
 	"help"=>\$help,
 	'url=s'=>\$url,
@@ -59,6 +61,7 @@ GetOptions(
 	'H|header=s%'=>\%headers,
 	'cookie=s%'=>\%cookies,
 	'd|data=s%'=>\%datas, #HTTP POST data: raw or urlencoded
+    'requestbody=s'=>\$request_body, #HTTP POST data
 	'A|user-agent=s'=>\$UserAgent,
 	'e|referer=s'=>\$referer,
 	'proxy=s'=>\$proxy,
@@ -95,7 +98,7 @@ die "You need to specify the url for set HTTP request \n Please run --help for m
 
 
 
-my $status_line =getResponse($url,\%cookies,$proxy,$timeout,$redirect,$UserAgent,$referer,\%headers,$method,\%datas,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw,$basicAuth,$username,$password);
+my $status_line =getResponse($url,\%cookies,$proxy,$timeout,$redirect,$UserAgent,$referer,\%headers,$method,\%datas,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw,$basicAuth,$username,$password,$request_body);
 say BOLD YELLOW $status_line;
 
 
@@ -114,6 +117,7 @@ where:
 -cookie usertrack='123456' -b hit=1
 -d|data name='tanjiti' -d passwd=12345
 
+-requestbody 'a=1&b=1'
 
 -A|user-agent 'baiduspider' default value is Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0
 -e|referer 'http://www.baidu.com'
@@ -246,7 +250,7 @@ sub setCookie{
 }
 
 sub setRequest{
-	my ($method,$url,$header,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$raw) = @_;
+	my ($method,$url,$header,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$raw,$request_body) = @_;
 
 	my $request = HTTP::Request->new();
     
@@ -278,7 +282,8 @@ sub setRequest{
     }elsif($method eq 'POST' and not $raw and not $fileUpload){
         
         #HTTP POST Form Data with application/x-www-form-urlencoded
-        $request = POST $uri, %headers, Content_Type => 'application/x-www-form-urlencoded',   Content=>[%datas];
+        $request_body = uri_escape($request_body,"&");
+        $request = $request_body ? (POST $uri, %headers,Content_Type => 'application/x-www-form-urlencoded', Content => $request_body) : (POST $uri, %headers, Content_Type => 'application/x-www-form-urlencoded',   Content=>[%datas]);
 
     }elsif($method eq 'POST' and $raw and not $fileUpload){
         
@@ -289,8 +294,9 @@ sub setRequest{
             $rawdata .= "$_=$datas{$_}&";
         }
         chop $rawdata;
+        
 
-       $request = POST $uri, %headers, Content => $rawdata;
+       $request = $request_body ? (POST $uri, %headers, Content => $request_body) :  (POST $uri, %headers, Content => $rawdata);
 
     }elsif($fileUpload and $method eq 'POST'){
         
@@ -353,7 +359,7 @@ sub setRequest{
     
 sub getResponse{
     
-    my ($url,$cookies_ref,$proxy,$timeout,$redirect,$UserAgent,$referer,$headers_ref,$method,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw,$basicAuth,$username,$password) = @_;
+    my ($url,$cookies_ref,$proxy,$timeout,$redirect,$UserAgent,$referer,$headers_ref,$method,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$silent,$raw,$basicAuth,$username,$password,$request_body) = @_;
     
     my %headers = %$headers_ref;
 
@@ -367,7 +373,7 @@ sub getResponse{
 
     my $header = setHeader($UserAgent,$host,$referer,$headers_ref,$basicAuth,$username,$password);
 
-    my $request = setRequest($method,$url,$header,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$raw);
+    my $request = setRequest($method,$url,$header,$datas_ref,$fileUpload,$fileFiled,$filePath,$fileName,$fileContent,$fileType,$raw,$request_body);
     
     my $response = $browser->request($request);
 
