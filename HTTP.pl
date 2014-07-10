@@ -282,7 +282,7 @@ sub setRequest{
     }elsif($method eq 'POST' and not $raw and not $fileUpload){
         
         #HTTP POST Form Data with application/x-www-form-urlencoded
-        $request_body = uri_escape($request_body,"&");
+        #$request_body = uri_escape($request_body,"&");
         $request = $request_body ? (POST $uri, %headers,Content_Type => 'application/x-www-form-urlencoded', Content => $request_body) : (POST $uri, %headers, Content_Type => 'application/x-www-form-urlencoded',   Content=>[%datas]);
 
     }elsif($method eq 'POST' and $raw and not $fileUpload){
