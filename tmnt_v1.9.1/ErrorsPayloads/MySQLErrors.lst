@@ -1,0 +1,12 @@
+You have an error in your SQL syntax. Check the manual that corresponds to your MySQL server version for the right syntax to use near
+The used SELECT statements have a different number of columns
+Table ‘DBNAME.
+You have an error in your SQL syntax. Check the manual that corresponds to your MySQL server version for the right syntax to use near ‘’ at line 1
+You have an error in your SQL syntax
+Check the manual that corresponds to your MySQL server
+your MySQL server version for
+MySQL
+right syntax to use near
+You have an error
+DBNAME
+Error checking in case the database is not accessible die("Could not connect: " . mysql_error());

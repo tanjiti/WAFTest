@@ -1,0 +1,22 @@
+Msg 170, Level 15, State 1, Line 1 Line 1:
+Incorrect syntax near
+Msg 105, Level 15, State 1, Line 1
+Unclosed quotation mark before the character string '
+Procedure '
+expects parameter '
+which was not supplied
+Msg 205, Level 16, State 1, Line 1
+All queries in a SQL statement containing a UNION operator must have an equal number of expressions in their target lists.
+All queries in a SQL statement containing a UNION
+operator must have an equal number of expressions
+in their target lists.
+Msg 245, Level 16, State 1, Line 1
+Syntax error converting the varchar value ‘foo’ to a column of data type int.
+Syntax error converting the varchar value
+to a column of data type int.
+Msg 156, Level 15, State 1, Line 1Incorrect syntax near the keyword 'from'.
+String or binary data would be truncated.
+Msg 208, Level 16, State 1, Line 1 Invalid object name
+Msg 170, Level 15, State 1, Line 1 Line 1: Incorrect syntax near
+Microsoft SQL Server 2000 – 8.00.760 (Intel X86) Dec 17 2002 14:22:05 Copyright (c)
+1988-2003 Microsoft Corporation Enterprise Edition on Windows NT 5.2 (Build 3790: )

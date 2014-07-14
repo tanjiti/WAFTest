@@ -1,0 +1,54 @@
+ORA-01756: quoted string not properly terminated
+ORA-00933: SQL command not properly ended
+PLS-00306: wrong number or types of arguments in call to
+ORA-01789: query block has incorrect number of result columns
+ORA-01790: expression must have same datatype as corresponding expression
+ORA-01722: invalid number
+ORA-01858: a non-numeric character was found where a numeric was expected
+ORA-00923: FROM keyword not found where expected
+ORA-00936: missing expression
+ORA-00972:identifier is too long
+ORA-00942: table or view does not exist
+ORA-00920: invalid relational operator
+ORA-00907: missing right parenthesis
+ORA-00900: invalid SQL statement
+ORA-03001: unimplemented feature
+ORA-02030: can only select from fixed tables/views
+quoted string not properly terminated
+SQL command not properly ended
+wrong number or types of arguments in call to
+query block has incorrect number of result columns
+expression must have same datatype as corresponding expression
+invalid number
+a non-numeric character was found where a numeric was expected
+FROM keyword not found where expected
+missing expression
+identifier is too long
+table or view does not exist
+invalid relational operator
+missing right parenthesis
+invalid SQL statement
+unimplemented feature
+can only select from fixed tables/views
+ORA-01756:
+ORA-00933:
+PLS-00306:
+ORA-01789:
+ORA-01790:
+ORA-01722:
+ORA-01858:
+ORA-00923:
+ORA-00936:
+ORA-00972:
+ORA-00942:
+ORA-00920:
+ORA-00907:
+ORA-00900:
+ORA-03001:
+ORA-02030:
+java.sql.SQLException:
+SQL command not properly ended at
+oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:180) at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:208)
+Exception Details: System.Data.OleDb.OleDbException: One or more errors occurred during processing of command.
+System.Web.HttpUnhandledException: Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException:
+oracle.jdbc.
