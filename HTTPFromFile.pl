@@ -80,7 +80,7 @@ sub sendRequest{
 	$ok = 0 if $response->code != $response_code;
 
 	print $request->as_string;
-	print $response->as_string;
+	print $response->headers_as_string;
 
 	$ok ? say "OK" : say "Not OK";
 
