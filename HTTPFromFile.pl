@@ -82,7 +82,7 @@ sub sendRequest{
 	print $request->as_string;
 	print $response->headers_as_string;
 
-	$ok ? say "OK" : say "Not OK";
+	$ok ? say $response->code." OK" : say $response->code." Not OK";
 
 	return $ok;
 }
