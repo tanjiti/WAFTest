@@ -114,7 +114,7 @@ where:
 -m|method GET|POST|HEAD default value is GET
 
 -H|header X-Forwarded-For='127.0.0.1, 127.0.0.2' -H Via='Squid'
--cookie usertrack='123456' -b hit=1
+-cookie usertrack='123456'
 -d|data name='tanjiti' -d passwd=12345
 
 -requestbody 'a=1&b=1'
