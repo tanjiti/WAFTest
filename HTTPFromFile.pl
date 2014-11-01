@@ -40,7 +40,7 @@ Usage: perl $0 [-code 403] [-uri 127.0.0.1] [-host example.com] [-port 80] -file
 -code: Specify the expected reponse code
 -uri: Sepecify the domain or host ip to send request,defalut is 127.0.0.1
 -host: Specify the Host header,default is localhost
--port: Specify the port to send request
+-port: Specify the port to send request,default is 80
 -file: Specify the request content file path
 -dir: Specify the dir path for all t files
 
@@ -78,7 +78,8 @@ sub sendRequest{
 	$request->uri("http://$uri:$port" . $request->uri);
 
 	$request->header("Host" => $host);
-
+        $request->header("Referer" => "http://$host:$port"); 
+	
 	#if no ua from t file ,set ua null
 	my $ua = LWP::UserAgent->new;
 	$ua->show_progress(1);
