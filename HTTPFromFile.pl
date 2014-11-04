@@ -78,7 +78,10 @@ sub sendRequest{
 	$request->uri("http://$uri:$port" . $request->uri);
 
 	$request->header("Host" => $host);
-        $request->header("Referer" => "http://$host:$port"); 
+        $request->header("Referer" => "http://$host:$port") unless defined($request->header('Referer'));
+	$request->header("Accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8") unless defined($request->header('Accept'));
+	$request->header("Accept-Encoding" => "gzip,deflate,sdch") unless defined($request->header('Accept-Encoding'));
+	$request->header("Accept-Language" => "zh-CN,zh;q=0.8,en;q=0.6") unless defined($request->header('Accept-Language')); 
 	
 	#if no ua from t file ,set ua null
 	my $ua = LWP::UserAgent->new;
