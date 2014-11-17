@@ -38,7 +38,7 @@ sub getHelp{
 Usage: perl $0 [-code 403] [-uri 127.0.0.1] [-host example.com] [-port 80] -file request_file_path
 
 -code: Specify the expected reponse code
--uri: Sepecify the domain or host ip to send request,defalut is 127.0.0.1
+-uri: Specify the domain or host ip to send request,default is 127.0.0.1
 -host: Specify the Host header,default is localhost
 -port: Specify the port to send request,default is 80
 -file: Specify the request content file path
