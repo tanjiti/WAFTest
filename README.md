@@ -17,4 +17,6 @@ echo -ne 'GET /?a=%3Cscript%3Ealert(1)%3C/script%3E HTTP/1.1\r\nHost: www.tanjit
 
 [second step]: send xss request use HTTPFromFile.pl
 
-perl HTTPFromFile.pl -code 403 -host www.tanjiti.com -port 80 -file xss.t 
+perl HTTPFromFile.pl -code 403 -host www.tanjiti.com -port 80 -file xss.t
+
+WAF Evauation Method detail http://danqingdani.blog.163.com/blog/static/1860941952014101462723470/ 
